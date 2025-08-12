@@ -167,3 +167,6 @@ data:
       static_configs:
         - targets: ['demo-app-service.demo-app.svc:80']
       metrics_path: /actuator/prometheus
+    - job_name: 'state-manager'
+      static_configs:
+        - targets: ['state-manager-svc.state-layer.svc:8000']
