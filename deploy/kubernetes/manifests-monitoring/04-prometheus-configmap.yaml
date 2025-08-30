@@ -170,3 +170,6 @@ data:
     - job_name: 'state-manager'
       static_configs:
         - targets: ['state-manager-svc.state-layer.svc:8000']
+    - job_name: 'themis-executor-traffic'
+      static_configs:
+        - targets: ['themis-executor-svc.themis-executor.svc:8000']
